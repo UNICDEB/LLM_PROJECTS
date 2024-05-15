@@ -13,5 +13,9 @@ if cuisine:
     st.header(response['resturant_name'])
     menu_items = response['menu_item'].split(",")
     
+    st.write("Menu Items")
     for item in menu_items:
         st.write("-", item)
+        
+    # date = st.date_input("Pick a date")
+    file = st.file_uploader("Upload a File")
